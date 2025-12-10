@@ -132,6 +132,7 @@
  
   #about {
     min-height: auto;
+    padding-bottom: 3rem;
   }
 
   .about-title {

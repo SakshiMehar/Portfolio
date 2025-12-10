@@ -1,0 +1,114 @@
+/* * {
+  margin: 0;
+  
+  
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  ;
+
+} */
+body, html {
+  overflow-x: hidden;
+  margin: 0px;
+  
+  box-sizing: border-box;
+  cursor: pointer
+}
+
+
+ .navBar {
+  position: fixed;   
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 3rem;
+ 
+  backdrop-filter: blur(6px); /* optional nice effect */
+}
+
+.Portfolio-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.navlist {
+  display: flex;
+  gap: 5rem;
+  height: 15vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #000;  
+  margin-top: 0px;
+  
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navlist li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #fff;
+  position: relative;
+}
+
+@media (max-width: 700px) {
+  .hideBtn {
+    display: none !important;
+  }
+
+  
+  .navlist {
+    display: none;
+  }
+  .menuIconImage {
+  width: 20px;       /* adjust size */
+  height: 20px;
+  object-fit: contain;
+}
+
+  /* show the menu button */
+  .mobileMenuBtn { 
+    position: absolute;
+    left: 1px;
+    top: 5px;
+    background: #060c0c;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 2px;
+    font-weight: 600;
+  }
+
+  
+  .mobileMenuItems {
+    position: absolute;
+    top: 8px;        /* under the navbar */
+    right: 1rem;      /* aligned to the button */
+    background: rgba(0, 0, 0, 0.9);
+    padding: 6px 11px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: auto;     
+    height: auto;
+  }
+
+  .mobileMenuItems a {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    white-space: nowrap;  
+  }
+
+  
+  .navBar {
+    height: 3rem;
+  }
+}

@@ -1,0 +1,149 @@
+
+
+#contact {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+ 
+  background: #0f0f0f;
+  color: rgb(169, 141, 141);
+}
+
+
+#contact::before {
+  content: "";
+  position: absolute;
+  left: -150px;
+  top: 50px;
+  width: 350px;
+  height: 350px;
+  background: rgba(70, 23, 182, 0.3);
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+
+#contact::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: 80px;
+  width: 300px;
+  height: 300px;
+  background: rgba(140, 0, 255, 0.4);
+  border-radius: 50%;
+  filter: blur(130px);
+  z-index: 0;
+}
+
+
+
+.contactTitle {
+  font-size: 60px;
+  margin-top: 3REM;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(84, 7, 88);
+  padding-bottom: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.contactDesc {
+  font-size: 18px;
+  padding-top: 1px;
+  text-align: center;
+  word-spacing: 2px;
+  max-width: 1000px;
+  line-height: 1.5;
+  color: #934081;
+  position: relative;
+  z-index: 2;
+}
+
+
+.contactIcons {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+
+.contactIcons i {
+  font-size: 30px;
+  color: #dd9adecd;
+  transition: 0.3s;
+}
+
+.contactIcons i:hover {
+  color: #4e0a4b;
+  transform: scale(1.2);
+}
+
+
+
+.contactFooter {
+  margin-top: 200px;
+  font-size: 20px;
+  color: #633e69;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 700px) {
+
+  #contact {
+    
+    gap: 10px;
+    min-height: auto;
+    
+  }
+
+
+  .contactTitle {
+    font-size: 42px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+
+  .contactDesc {
+    font-size: 16px;
+    max-width: 95%;
+    line-height: 1.5rem;
+  }
+
+
+  .contactIcons {
+    gap: 25px;
+    margin-top: 15px;
+  }
+
+  .contactIcons i {
+    font-size: 26px;
+  }
+
+
+  .contactFooter {
+    margin-top: 100px;
+    font-size: 18px;
+  }
+
+ 
+  #contact::before,
+  #contact::after {
+    width: 220px;
+    height: 220px;
+    filter: blur(90px);
+  }
+}

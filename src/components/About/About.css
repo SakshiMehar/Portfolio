@@ -1,0 +1,196 @@
+
+#about {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0f0f0f;
+  
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  left: -150px;
+  top: 50px;
+  width: 350px;
+  height: 350px;
+  background: rgba(153, 0, 255, 0.3);
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+
+#about::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: 80px;
+  width: 300px;
+  height: 300px;
+  background: rgba(140, 0, 255, 0.4);
+  border-radius: 50%;
+  filter: blur(130px);
+  z-index: 0;
+}
+
+
+
+.about-title {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(153, 16, 160);
+  position: relative;
+  z-index: 2;
+  line-height: 0;
+  margin: 1;
+}
+
+.about-description{
+  font-size: 20px;
+  text-align: center;
+  max-width: 900px;
+  line-height: 1.7;
+  color: #823885;
+  position: relative;
+  z-index: 2;
+  
+  
+}
+.skills-heading{
+ font-size: 3rem;
+  text-align: center;
+  max-width: 900px;
+  line-height: 1.7;
+  color: #7c177f98;
+  position: relative;
+  z-index: 2;
+  line-height: 0.3;
+
+}
+
+
+
+.skillBars {
+  width: 50rem;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 2px thin rgb(75, 9, 91);
+  position: relative;
+  z-index: 2;
+}
+
+.skillBar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.3s ease;
+}
+
+.skillBar:hover {
+  transform: translateY(-3px);
+  border-color: #a76dba;
+}
+
+
+.skillBarImg,
+.skillBarImg1 {
+  width: 55px;
+  height: 55px;
+  object-fit: fill;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+}
+
+/* Text beside images */
+.skillBarText h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: rgb(98, 37, 141);
+}
+
+.skillBarText p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #ba79d8;
+  max-width: 650px;
+}
+
+@media (max-width: 700px) {
+
+ 
+  #about {
+    min-height: auto;
+  }
+
+  .about-title {
+    font-size: 35px;
+    line-height: 0;
+    margin-bottom: 10px;
+  }
+
+
+  .about-description {
+    font-size: 16px;
+    max-width: 90%;
+    line-height: 1.5rem;
+  }
+
+ 
+  .skills-heading {
+    font-size: 28px;
+    margin: 5px 0;
+    line-height: 1;
+  }
+
+  .skillBars {
+    width: 100%;
+    gap: 10px;
+  }
+
+ 
+  .skillBar {
+    padding: 4px;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  
+
+ 
+  .skillBarImg,
+  .skillBarImg1 {
+    width: 40px;
+    height: 40px;
+  }
+
+ 
+  .skillBarText h2 {
+    font-size: 15px;
+    
+  }
+
+  .skillBarText p {
+    font-size: 10px;
+    max-width: 100%;
+  }
+
+  
+  #about::before,
+  #about::after {
+    width: 180px;
+    height: 180px;
+    filter: blur(80px);
+  }
+}

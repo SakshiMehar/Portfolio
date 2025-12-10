@@ -1,0 +1,216 @@
+
+
+#works {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0f0f0f;
+  color: rgb(169, 141, 141);
+}
+
+
+#works::before {
+  content: "";
+  position: absolute;
+  left: -150px;
+  top: 50px;
+  width: 350px;
+  height: 350px;
+  background: rgba(70, 23, 182, 0.3);
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+#works::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: 80px;
+  width: 300px;
+  height: 300px;
+  background: rgba(140, 0, 255, 0.4);
+  border-radius: 50%;
+  filter: blur(130px);
+  z-index: 0;
+}
+
+
+.workTitle {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(111, 26, 164, 0.901);
+  padding-bottom: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.workDesc {
+  font-size: 20px;
+  text-align: center;
+  word-spacing: 2px;
+  max-width: 1000px;
+  color: #4e2682c6;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2rem;
+}
+
+
+
+.workImgs {
+  width: 50%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* TWO projects per row */
+  gap: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.workImg {
+  display: flex;
+  flex-direction: column;
+  background: rgba(84, 175, 195, 0.287);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  border: 1px solid rgba(120, 86, 206, 0.606);
+}
+
+.workImg:hover {
+  transform: translateY(-4px);
+}
+
+
+.workImages {
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+  gap: 2px;
+}
+
+
+.workText {
+  padding: 8px 15px;
+  text-align: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.workText h2 {
+  font-size: 20px;
+  color: rgba(235, 230, 235, 0.952);
+}
+
+.workText p {
+  font-size: 16px;
+  color: #5a7081;
+  line-height: 1.5;
+}
+
+.workText h4 {
+  font-size: 15px;
+  color: #160e26d2;
+  font-weight: 600;
+}
+
+
+
+/* 📱 RESPONSIVE FOR MAX-WIDTH 700px */
+@media (max-width: 700px) {
+
+
+  #works {
+    min-height: auto;
+  }
+
+  
+  .workTitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  
+  .workDesc {
+    font-size: 18px;
+    max-width: 95%;
+    line-height: 1.5;
+  }
+
+  /* Grid becomes 1 column */
+  .workImgs {
+    width: 100%;
+    gap: 20px;
+  }
+
+  /* Project cards */
+  .workImg {
+    border-radius: 4px;
+  }
+
+  /* Images */
+  .workImages {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  /* Title inside card */
+  .workText h2 {
+    font-size: 18px;
+    line-height: 1rem;
+  }
+
+  /* Description inside card */
+  .workText p {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  /* Tech stack */
+  .workText h4 {
+    font-size: 13px;
+    line-height: normal;
+  }
+
+  #works::before,
+  #works::after {
+    width: 200px;
+    height: 200px;
+    filter: blur(90px);
+  }
+}
+/* 📱 EXTRA SMALL DEVICES */
+@media (max-width: 450px) {
+
+  .workTitle {
+    font-size: 40px;
+    margin-top: 1rem;
+  }
+
+  .workDesc {
+    font-size: 14px;
+  }
+
+  .workImages {
+    height: 100px;
+  }
+
+  .workText h2 {
+    font-size: 16px;
+  }
+
+  .workText p {
+    font-size: 13px;
+  }
+
+  .workText h4 {
+    font-size: 12px;
+  }
+}

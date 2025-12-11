@@ -24,7 +24,6 @@ body, html {
   width: 100%;
   z-index: 1000;
   height: 3rem;
- 
   backdrop-filter: blur(6px); /* optional nice effect */
 }
 
@@ -60,9 +59,9 @@ body, html {
 }
 
 @media (max-width: 700px) {
-  .hideBtn {
+  /* .hideBtn {
     display: none !important;
-  }
+  } */
 
   
   .navlist {
@@ -110,5 +109,6 @@ body, html {
   
   .navBar {
     height: 3rem;
+    background: #000;
   }
 }

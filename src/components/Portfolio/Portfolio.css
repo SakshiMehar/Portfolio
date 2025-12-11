@@ -98,7 +98,7 @@ button:nth-child(1):hover {
 }
 
 button:nth-child(2):hover {
-  background: rgb(174, 115, 208);
+  /* background: rgb(174, 115, 208); */
   color: #262525;
 }
 
@@ -218,10 +218,9 @@ button:nth-child(2):hover {
     margin-left: 45px;
     justify-content: center;
     
-
-
-    
   }
+  
+
   #viewProject{
     display: none;
 

@@ -212,6 +212,7 @@ button:nth-child(2):hover {
   
   .btn-container button {
     width: 50%;
+    
     display: flex;
     flex-direction: row;
     margin: 5px 0;
@@ -228,6 +229,7 @@ button:nth-child(2):hover {
   button:nth-child(2) {
   
   margin-left: 0;
+  border: none;
 }
 
   

@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/navbar";
@@ -15,6 +17,7 @@ function App() {
     <About/>
     <Projects/>
     <Contact/>
+    <ToastContainer position="top-right" autoClose={2000} />
 
     </>
     

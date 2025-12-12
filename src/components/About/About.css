@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 #about {
   width: 100%;
   min-height: 100vh;
@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   background: #0f0f0f;
-  
+  padding-top: 2rem;
 }
 
 #about::before {
@@ -24,7 +24,6 @@
   z-index: 0;
 }
 
-
 #about::after {
   content: "";
   position: absolute;
@@ -38,8 +37,6 @@
   z-index: 0;
 }
 
-
-
 .about-title {
   font-size: 60px;
   font-weight: 700;
@@ -51,7 +48,7 @@
   margin: 1;
 }
 
-.about-description{
+.about-description {
   font-size: 20px;
   text-align: center;
   max-width: 900px;
@@ -59,11 +56,9 @@
   color: #823885;
   position: relative;
   z-index: 2;
-  
-  
 }
-.skills-heading{
- font-size: 3rem;
+.skills-heading {
+  font-size: 3rem;
   text-align: center;
   max-width: 900px;
   line-height: 1.7;
@@ -71,10 +66,7 @@
   position: relative;
   z-index: 2;
   line-height: 0.3;
-
 }
-
-
 
 .skillBars {
   width: 50rem;
@@ -103,17 +95,15 @@
   border-color: #a76dba;
 }
 
-
 .skillBarImg,
 .skillBarImg1 {
   width: 55px;
   height: 55px;
   object-fit: fill;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  
 }
 
-/* Text beside images */
+
 .skillBarText h2 {
   font-size: 25px;
   margin-bottom: 5px;
@@ -128,8 +118,6 @@
 }
 
 @media (max-width: 700px) {
-
- 
   #about {
     min-height: auto;
     padding-bottom: 3rem;
@@ -141,14 +129,12 @@
     margin-bottom: 10px;
   }
 
-
   .about-description {
     font-size: 16px;
     max-width: 90%;
     line-height: 1.5rem;
   }
 
- 
   .skills-heading {
     font-size: 28px;
     margin: 5px 0;
@@ -160,26 +146,20 @@
     gap: 10px;
   }
 
- 
   .skillBar {
     padding: 4px;
     flex-direction: row;
     gap: 10px;
   }
 
-  
-
- 
   .skillBarImg,
   .skillBarImg1 {
     width: 40px;
     height: 40px;
   }
 
- 
   .skillBarText h2 {
     font-size: 15px;
-    
   }
 
   .skillBarText p {
@@ -187,7 +167,6 @@
     max-width: 100%;
   }
 
-  
   #about::before,
   #about::after {
     width: 180px;

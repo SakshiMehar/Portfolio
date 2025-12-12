@@ -1,26 +1,34 @@
 import { Link } from "react-scroll";
 import "./Portfolio.css";
-import backImg from "./backImg.jpg"; // background circle image
+import backImg from "./backImg.jpg"; 
 
 const Portfolio = () => {
-   // mobile menu toggle
+  
 
   return (
     <div className="Portfolio-container" id="portfolio">
-      
-      
-
-     
       <div className="left-container">
-        {/* SOCIAL ICONS */}
+        
         <div className="icons">
-          <a href="https://www.facebook.com/sa.mehar.16" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/sa.mehar.16"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="https://www.linkedin.com/in/sakshi-mehar-s01/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/sakshi-mehar-s01/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/SakshiMehar" target="_blank"  rel="noopener noreferrer">
+          <a
+            href="https://github.com/SakshiMehar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-github"></i>
           </a>
           <a href="mailto:smehar2002@gmail.com">
@@ -28,10 +36,9 @@ const Portfolio = () => {
           </a>
         </div>
 
-       
         <div className="content">
           <p className="intro">
-             Hi ! I am <br />
+            Hi ! I am <br />
             <span className="name"> Sakshi Mehar</span>
           </p>
 
@@ -46,19 +53,19 @@ const Portfolio = () => {
           </p>
 
           <div className="btn-container">
-            <button   onClick={() => window.open("./resume.pdf", "_blank")}>
+            <button onClick={() => window.open("./resume.pdf", "_blank")}>
               Resume
             </button>
-             <Link  to="works" smooth={true} duration={300} offset={-30}> <button id="viewProject"> View Project</button></Link>
-           
+            <Link to="works" smooth={true} duration={300} offset={-50}>
+              {" "}
+              <button id="viewProject"> View Project</button>
+            </Link>
           </div>
         </div>
       </div>
 
-      {/* RIGHT SECTION */}
       <div className="right-container"></div>
 
-      {/* BACKGROUND DESIGN */}
       <div className="design">
         <div className="circle"></div>
         <div

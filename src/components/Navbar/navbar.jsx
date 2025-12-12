@@ -29,7 +29,7 @@ const Navbar = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-30}
+            offset={-45}
             duration={500}
           >
             About
@@ -61,15 +61,16 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button className={`mobileMenuBtn ${showMenu ? "hideBtn" : ""}`}
-       onClick={() => setShowMenu(!showMenu)}>
-  <img 
-    src={showMenu ? Close : MenuBtn} 
-    alt="menu"
-    className="menuIconImage"
-  />
-</button>
-
+      <button
+        className={`mobileMenuBtn ${showMenu ? "hideBtn" : ""}`}
+        onClick={() => setShowMenu(!showMenu)}
+      >
+        <img
+          src={showMenu ? Close : MenuBtn}
+          alt="menu"
+          className="menuIconImage"
+        />
+      </button>
 
       {showMenu && (
         <div className="mobileMenuItems">

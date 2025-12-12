@@ -1,30 +1,20 @@
-/* * {
-  margin: 0;
-  
-  
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-  ;
-
-} */
-body, html {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body,
+html {
   overflow-x: hidden;
   margin: 0px;
-  
   box-sizing: border-box;
-  cursor: pointer
+  cursor: pointer;
 }
 
-
- .navBar {
-  position: fixed;   
+.navBar {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   height: 3rem;
-  backdrop-filter: blur(6px); /* optional nice effect */
+  backdrop-filter: blur(6px); 
 }
 
 .Portfolio-container {
@@ -41,9 +31,8 @@ body, html {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: #000;  
+  background-color: #000;
   margin-top: 0px;
-  
 }
 
 .navlist li {
@@ -59,22 +48,19 @@ body, html {
 }
 
 @media (max-width: 700px) {
-  /* .hideBtn {
-    display: none !important;
-  } */
-
   
+
   .navlist {
     display: none;
   }
   .menuIconImage {
-  width: 20px;       /* adjust size */
-  height: 20px;
-  object-fit: contain;
-}
+    width: 20px; 
+    height: 20px;
+    object-fit: contain;
+  }
 
-  /* show the menu button */
-  .mobileMenuBtn { 
+  
+  .mobileMenuBtn {
     position: absolute;
     left: 1px;
     top: 5px;
@@ -85,17 +71,16 @@ body, html {
     font-weight: 600;
   }
 
-  
   .mobileMenuItems {
     position: absolute;
-    top: 8px;        /* under the navbar */
-    right: 1rem;      /* aligned to the button */
+    top: 8px;
+    right: 1rem; 
     background: rgba(0, 0, 0, 0.9);
     padding: 6px 11px;
     display: flex;
     flex-direction: row;
     gap: 12px;
-    width: auto;     
+    width: auto;
     height: auto;
   }
 
@@ -103,10 +88,9 @@ body, html {
     color: white;
     font-size: 0.9rem;
     text-decoration: none;
-    white-space: nowrap;  
+    white-space: nowrap;
   }
 
-  
   .navBar {
     height: 3rem;
     background: #000;

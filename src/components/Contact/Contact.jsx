@@ -143,7 +143,10 @@ const Contact = () => {
       <h2 className="contactTitle">Contact Me</h2>
 
       <span className="contactDesc">
-        Feel free to reach out anytime. I'm always open to discuss new projects.
+        Feel free to reach out if you have a project in mind, 
+        need help building something,
+        or just want to connect.
+        I’m always open to new opportunities.
       </span>
 
       {/* SOCIAL ICONS */}

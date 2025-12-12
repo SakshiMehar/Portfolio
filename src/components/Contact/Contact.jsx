@@ -48,11 +48,11 @@ const Contact = () => {
     setErrors((prev) => ({ ...prev, [name]: error }));
   };
 
-  // ---------------- INPUT CHANGE HANDLER ----------------
+ 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Block unwanted characters immediately
+   
     if (name === "name" && /[^A-Za-z ]/.test(value)) return;
     if (name === "phone" && /\D/.test(value)) return;
 
@@ -60,10 +60,10 @@ const Contact = () => {
     validate(name, value);
   };
 
-  // ---------------- POPUP HANDLING ----------------
+  
   const openForm = () => {
     setShowForm(true);
-    document.body.classList.add("no-scroll"); // hides navbar
+    document.body.classList.add("no-scroll"); 
   };
 
   const closeForm = () => {
@@ -74,18 +74,18 @@ const Contact = () => {
   const sendEmail = (e) => {
   e.preventDefault();
 
-  // Run validation again before submitting
+  
   validate("name", formData.name);
   validate("phone", formData.phone);
   validate("email", formData.email);
 
-  // BLOCK SUBMISSION if any field is empty
+  
   if (!formData.name || !formData.phone || !formData.email || !formData.message) {
     toast.error("All fields are required.");
     return;
   }
 
-  // BLOCK SUBMISSION if any error message exists
+  
   if (
     errors.name !== "" ||
     errors.phone !== "" ||
@@ -95,7 +95,7 @@ const Contact = () => {
     return;
   }
 
-  // EXTRA validation to prevent bypass
+ 
   if (!/^[A-Za-z ]+$/.test(formData.name)) {
     toast.error("Name can contain only letters.");
     return;

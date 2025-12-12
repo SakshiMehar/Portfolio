@@ -118,6 +118,7 @@
 @media (max-width: 700px) {
   #works {
     min-height: auto;
+    padding-top :3rem ;
   }
 
   .workTitle {
